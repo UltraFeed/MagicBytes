@@ -14,7 +14,7 @@ namespace MagicBytes.services;
 // Если какая-то хуйня, мы должны написать какое расширение ожидалось на самом деле.
 // если такое расширение не найдено, то говорим что в базе такого нет
 
-public static class FileComparsionService
+internal static class FileComparsionService
 {
 	public static string CompareExtensions ()
 	{

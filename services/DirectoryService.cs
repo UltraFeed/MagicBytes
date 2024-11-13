@@ -1,6 +1,6 @@
 namespace MagicBytes.services;
 
-public class DirectoryService
+internal sealed class DirectoryService
 {
 	private readonly string dirPath = @"C:\Program Files (x86)\VMware\VMware Player";
 	private readonly string [] files;
