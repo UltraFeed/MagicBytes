@@ -1,4 +1,4 @@
-#pragma warning disable CA1305
+﻿#pragma warning disable CA1305
 
 using System.Text;
 
