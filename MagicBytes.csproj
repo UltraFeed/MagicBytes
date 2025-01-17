@@ -1,25 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net9.0</TargetFramework>
-		<Nullable>enable</Nullable>
+		<Nullable>annotations</Nullable>
 		<AnalysisLevel>latest-all</AnalysisLevel>
 		<ImplicitUsings>enable</ImplicitUsings>
+		<ErrorReport>none</ErrorReport>
+		<DebugType>embedded</DebugType>
+		<WarningLevel>8</WarningLevel>
+		<CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-		<DebugType>none</DebugType>
-		<WarningLevel>9999</WarningLevel>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-		<DebugType>none</DebugType>
-		<WarningLevel>9999</WarningLevel>
-	</PropertyGroup>
+
 	<ItemGroup>
 		<None Remove="resources\extensions.json" />
 	</ItemGroup>
+
 	<ItemGroup>
 		<EmbeddedResource Include="resources\extensions.json">
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
 		</EmbeddedResource>
 	</ItemGroup>
+
 </Project>
